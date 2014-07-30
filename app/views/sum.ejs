@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sum</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <% var z = a + b + c + d %>
+    <% var y = (z%2)===0 ? 'red' : 'blue' %>
+    <p style="font-size:<%=fontsize%>; color:<%= color %>; 
+    border:<%= borderwidth %> solid; border-color:<%= color %>;">
+    <%= a %> + <%= b %> + <%= c %> + <%= d %> = 
+    <span style="color:<%= y %>;">
+      <%= z %>
+    </span>
+    </p>
+  </body>
+</html>

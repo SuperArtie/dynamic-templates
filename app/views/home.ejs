@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main Title</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1 style="color:red; background-color:yellow;">Header number one</h1>
+    <h2>Multiply 3 * 3 = <%= 3*3  %></h2>
+    <h2 id="ab">A random number between 3 and 12 =  <%= Math.floor(Math.random()*10) + 3  %></h2>
+    <% var a = 4, b = 2  %>
+    <p><%= a + b  %></p>
+    <p>this is where some text comes in, behbeh!!!</p>
+    <% if(a===3){  %>
+      <p>a is 3</p>
+      <% }else{  %>
+      <p> a isn't 3  </p>
+      <% } %>
+      <% fonts = ['\'Poiret One\', cursive', '\'Lobster\', cursive', '\'Coming Soon\', cursive',
+                  '\'Amatic SC\', cursive']  %>
+      <% var colors = ['blue', 'green', 'yellow', 'orange', 'pink', 'magenta', 'purple', 'cyan', 'teal']  %>
+      <% for(var i = 0; i < colors.length; i++){  %>
+      <p style="color:<%= colors[i] %>; font-size:<%= 12 + (i*2) %>px; 
+                background-color:<%= (colors.length-1)===i ? colors[0] : colors[i+1]%>;
+                font-family:<%= fonts[i%fonts.length] %>;">
+                <%= colors[i].toUpperCase() %></p>
+      <% }  %>
+
+  </body>
+</html>

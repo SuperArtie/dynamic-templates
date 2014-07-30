@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main Title</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <h3>gallagher vs carrot top</h3>
+  <% var k=0  %>
+  <% var bw = ['black', 'white']  %>
+  <table>
+    <tbody>
+    <% for(var i = 0; i < 8; i++){  %> 
+    <tr id="<%=i%>" class="row">
+        <% for(var j = 0; j < 8; j++){  %>
+          <% if((k%2)===0){ %>
+            <td class="black" style="background-color: black;"></td>
+          <% }else{ %>
+            <td class="white" style="background-color: white;"></td>
+            <% }k++ %>
+          <% }k+=1 %>
+      </tr><br> 
+      <% } %>
+      </tbody>
+</table>
+</body>
+</html>

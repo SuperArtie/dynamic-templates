@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+body{
+  margin: 0px;
+  background-color: gray;
+}
+
+h1{
+  border: 7px dotted cyan;
+  /*background-color: green;
+  color: blue;*/
+  margin: 0px;
+  padding: 20px 0px 20px 20px;
+}
+
+h2{
+  margin: 0px;
+  color: white;
+  padding: 20px 0px 20px 20px;
+  background-color: pink;
+}
+h3{
+  color: cyan;
+  position: center;
+  padding-top: 79px;
+  font-family: 'Coming Soon', cursive;
+ }
+p{
+  margin: 0px;
+  padding: 20px 0px 0px 20px;
+}
+
+#ab{
+  border: 3px dotted white;
+}
+
+td{
+  width: 45px;
+  height: 45px;
+  padding: 14px;
+}
+
+table tr:nth-child(-2n+3) td:nth-child(2n), tr:nth-child(2) td:nth-child(2n-1){
+  margin: auto;
+  background-image: url('/images/white.jpg');
+  background-size: 60px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+table tr:nth-child(2n + 6) td:nth-child(2n), tr:nth-child(7) td:nth-child(2n-1){
+  margin: auto;
+  background-image: url('https://s3.amazonaws.com/webassets.ticketmob.com/TS/images/comedians/gallagher.jpg');
+  background-size: auto 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+table{
+  border-spacing: 0px;
+  margin: auto;
+  margin-top: 0px;
+  padding-bottom: 50px;
+}
+
+
