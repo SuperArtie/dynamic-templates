@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Roll Dice</title>
+    <link rel="stylesheet" href="/css/rolldice.css">
+  </head>
+  <body>
+    <h1>Roll those dice!!! Snake eyes!!! Triple sixes!!!</h1>
+    <% for(var i = 0; i < load.length; i++){ %>
+      <img src="/images/<%=load[i]%>.jpg">
+    <% } %>
+    <h2>Sum is: <%= sum %></h2>
+  </body>
+</html>
